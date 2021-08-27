@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- ADD GOOGLE FONTS -->
+    <!-- ADD STYSHEET -->
+
+
+</head>
+
+<body>
+    <header id="title">
+        <!-- Site logo -->
+        <a class="logo" href="index.html">
+            <img class="logo-img" alt="Anima Mundi Board Game Club Logo" src="assets/???" />
+            <h1 class="logo-title">Anima Mundi Board Game Club</h1>
+        </a>
+        <!-- Navigation bar -->
+        <ul class="nav-bar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="reviews.html">Game Reviews</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="about_us.html">About us</a></li>
+        </ul>
+    </header>
+    <section id="covid19-container">
+        <div id="covid19">
+            <p>COVID-19 - Check here to see our guidelines</p>
+        </div>
+    </section>
+
+    <body>
+
+
+    </body>
+
+    <!-- Footer. Includes address, newsletter subscription
+     and social media links. -->
+    <footer id="footer">
+        <div class="footer-container">
+            <section id="footer-logo">
+                <img class="logo-img" alt="Anima Mundi Board Game Club Logo" src="assets/???" />
+            </section>
+            <section id="footer-address">
+                <p>
+                    Rua Carijos, 202, Jardim da Penha, Vitoria, ES
+                </p>
+            </section>
+            <section id="footer-newsletter">
+                <p>
+                    Newsletter form goes here???
+                </p>
+            </section>
+            <section id="footer-social-media">
+                <p>
+                    Social media images go here???
+                </p>
+            </section>
+        </div>
+    </footer>
+
+</html>
