@@ -1,11 +1,14 @@
+
+// ----------------------------
 // Toggles visibility of Articles and Videos sections on review.html
+// ----------------------------
 
 // Initiate variables for the buttons
 let articlesButton = document.getElementById("button-review-articles");
 let videosButton = document.getElementById("button-review-videos");
 
 // Articles start active with a different colored background
-document.getElementById("button-review-articles").style.backgroundColor = "#f7800065"
+document.getElementById("button-review-articles").style.backgroundColor = "#f7800065";
 
 // Event listener for the articles button
 articlesButton.addEventListener("click", function () {
