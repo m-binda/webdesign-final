@@ -45,12 +45,16 @@
 
     <!-- Buttons for the sections to be chosen with JS -->
     <div class="reviews-titles">
-        <h2 id="articles-title">Articles</h2>
-        <h2 id="videos-title">Videos</h2>
+        <button class="button-review" id="button-review-articles">
+            Articles
+        </button>
+        <button class="button-review" id="button-review-videos">
+            Videos
+        </button>
     </div>
 
     <!-- Written reviews -->
-    <section class="articles-section">
+    <section id="articles-section">
         <h3 class="subsection-title">
             Here you'll find some of our own reviews of our favorite games.
         </h3>
@@ -324,7 +328,7 @@
     </section>
 
     <!-- Video reviews -->
-    <section class="videos-section">
+    <section id="videos-section">
         <h3 class="subsection-title">
             Here we post some of our favorite reviews from our favorite reviewers!
         </h3>
@@ -378,36 +382,37 @@
 
     </section>
 
+    <!-- Footer. Includes address, newsletter subscription
+     and social media links. -->
+    <footer id="footer">
+        <div class="footer-container">
+            <section id="footer-newsletter">
+                <form action="index.html">
+                    <label for="newsletter">Newsletter:</label>
+                    <br>
+                    <input type="email" placeholder="Your email" required>
+                    <button>Subscribe</button>
+                </form>
+            </section>
+            <section id="footer-address">
+                <img class="logo-footer" alt="Anima Mundi Board Game Club Logo" src="assets/logos/logo-footer.png">
+                <p>
+                    Rua Carijos, 202, Jardim da Penha, Vitoria, ES
+                    <br>
+                    +55 27 3233-8313
+                </p>
+            </section>
+            <section id="footer-social-media">
+                <p>
+                    Social media images go here???
+                </p>
+            </section>
+        </div>
+    </footer>
 
+    <!-- JS Script to switch between Articles and Videos sections -->
+    <script src="assets/js/animamundi.js"></script>
 
 </body>
-
-<!-- Footer. Includes address, newsletter subscription
-     and social media links. -->
-<footer id="footer">
-    <div class="footer-container">
-        <section id="footer-newsletter">
-            <form action="index.html">
-                <label for="newsletter">Newsletter:</label>
-                <br>
-                <input type="email" placeholder="Your email" required>
-                <button>Subscribe</button>
-            </form>
-        </section>
-        <section id="footer-address">
-            <img class="logo-footer" alt="Anima Mundi Board Game Club Logo" src="assets/logos/logo-footer.png">
-            <p>
-                Rua Carijos, 202, Jardim da Penha, Vitoria, ES
-                <br>
-                +55 27 3233-8313
-            </p>
-        </section>
-        <section id="footer-social-media">
-            <p>
-                Social media images go here???
-            </p>
-        </section>
-    </div>
-</footer>
 
 </html>
