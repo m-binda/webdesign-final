@@ -321,6 +321,12 @@ textarea {
   grid-template-columns: 300px 1fr;
 }
 
+@media (max-width: 700px) {
+  .article {
+    display: block;
+  }
+}
+
 .article:nth-of-type(2n-1) {
   background-color: #002f4932;
 }
@@ -366,7 +372,7 @@ textarea {
 
 .videos-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(650px, 750px));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 750px));
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -384,9 +390,10 @@ textarea {
 }
 
 iframe {
-  width: 600px;
-  height: 340px;
+  height: 390px;
+  width: 100%;
 }
+
 
 /* Reviews page style end */
 
