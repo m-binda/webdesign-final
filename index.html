@@ -8,7 +8,10 @@
     <title>Anima Mundi Board Game Club</title>
 
     <!-- TODO: Fonts -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- TODO: Main stylesheet -->
     <link rel="stylesheet" href="assets/main.css">
@@ -18,13 +21,15 @@
 <body>
     <header id="title">
         <!-- Site logo -->
-        <a class="logo" href="index.html">
-            <img class="logo-img" alt="Anima Mundi Board Game Club Logo" src="assets/???" />
-            <h1 class="logo-title">Anima Mundi Board Game Club</h1>
-        </a>
+        <div>
+            <a class="logo" href="index.html">
+                <img class="logo-img" alt="Anima Mundi Board Game Club Logo" src="assets/logos/logo-rect.png">
+                <!-- <h1 class="logo-title">Anima Mundi Board Game Club</h1> -->
+            </a>
+        </div>
         <!-- Navigation bar -->
         <ul class="nav-bar">
-            <li><a href="index.html">Home</a></li>
+            <li><a id="current" href="index.html">Home</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="reviews.html">Game Reviews</a></li>
             <li><a href="membership.html">Membership</a></li>
@@ -38,6 +43,8 @@
     </section>
 
     <!-- Carousell goes here??? -->
+
+    <!-- Main content -->
     <main id="main-content">
         <div class="main-container">
 
@@ -78,7 +85,7 @@
             <section class="most-played-mid">
                 <div class="most-played-container">
                     <h2 id="most-played-title">
-                        Most Played Games of Last month
+                        Most Played Games
                     </h2>
                     <ol>
                         <li class="most-played" id="most-played-game1">
@@ -100,7 +107,7 @@
                             Lisboa
                         </li>
                         <li class="most-played" id="most-played-game7">
-                            Robinson Crusoe: Adventures on the Cursed Island
+                            Robinson Crusoe
                         </li>
                         <li class="most-played" id="most-played-game8">
                             Gloomhaven
@@ -133,16 +140,22 @@
 <footer id="footer">
     <div class="footer-container">
         <section id="footer-logo">
-            <img class="logo-img" alt="Anima Mundi Board Game Club Logo" src="assets/???" />
+            <img class="logo-footer" alt="Anima Mundi Board Game Club Logo" src="assets/logos/logo-footer.png">
+        </section>
+        <section id="footer-newsletter">
+            <form action="index.html">
+                <label for="newsletter">Newsletter:</label>
+                <br>
+                <input type="email" placeholder="Your email" required>
+                <button>Subscribe</button>
+            </form>
         </section>
         <section id="footer-address">
             <p>
                 Rua Carijos, 202, Jardim da Penha, Vitoria, ES
             </p>
-        </section>
-        <section id="footer-newsletter">
             <p>
-                Newsletter form goes here???
+                +55 27 3233-8313
             </p>
         </section>
         <section id="footer-social-media">

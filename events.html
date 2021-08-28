@@ -7,23 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anima Mundi Board Game Club</title>
 
-    <!-- ADD GOOGLE FONTS -->
-    <!-- ADD STYSHEET -->
+    <!-- TODO: Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
 
+    <!-- TODO: Main stylesheet -->
+    <link rel="stylesheet" href="assets/main.css">
 
 </head>
 
 <body>
     <header id="title">
         <!-- Site logo -->
-        <a class="logo" href="index.html">
-            <img class="logo-img" alt="Anima Mundi Board Game Club Logo" src="assets/???" />
-            <h1 class="logo-title">Anima Mundi Board Game Club</h1>
-        </a>
+        <div>
+            <a class="logo" href="index.html">
+                <img class="logo-img" alt="Anima Mundi Board Game Club Logo" src="assets/logos/logo-rect.png">
+                <!-- <h1 class="logo-title">Anima Mundi Board Game Club</h1> -->
+            </a>
+        </div>
         <!-- Navigation bar -->
         <ul class="nav-bar">
             <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
+            <li><a id="current" href="events.html">Events</a></li>
             <li><a href="reviews.html">Game Reviews</a></li>
             <li><a href="membership.html">Membership</a></li>
             <li><a href="about_us.html">About us</a></li>
@@ -35,144 +42,149 @@
         </div>
     </section>
 
-    <body>
 
-        <!-- Container for the current events and form -->
-        <section class="events-container">
+    <!-- Container for the current events and form -->
+    <section class="events-container">
 
-            <!-- Current events -->
-            <div class="events-left">
-                <h2 class="events-title">Current Events</h2>
-                <div class="events-left-divider" id="weekly">
-                    <h3>Weekly Events</h3>
-                    <div class="event-left-divider-content" id="event-weekly1">
-                        <h4>
-                            Your daily dose of gaming
-                        </h4>
-                        <p>
-                            From Thursday to Sunday (except Heavy Weights Weekends - see below), from 10h to 22h,
-                            you are invited to join us for our daily
-                            fix of nice board games. All games with up to 4 hours duration allowed.
-                        </p>
-                    </div>
-                    <div class="event-left-divider-content" id="event-weekly2">
-                        <h4>
-                            Younglings Afternoons
-                        </h4>
-                        <p>
-                            This event takes place every Wednesday, from 13h to 18h and offers the nicest, most fun
-                            games for little people ages 4 to 13 (14 or above? Your gaming experience has not limits, so
-                            you're welcome to our adult events!)
-                        </p>
-                    </div>
+        <!-- Current events -->
+        <div class="events-left">
+            <h2 class="events-title">Current Events</h2>
+            <div class="events-left-divider" id="weekly">
+                <h3>Weekly Events</h3>
+                <div class="event-left-divider-content" id="event-weekly1">
+                    <h4>
+                        Your daily dose of gaming
+                    </h4>
+                    <p>
+                        From Thursday to Sunday (except Heavy Weights Weekends - see below), from 10h to 22h,
+                        you are invited to join us for our daily
+                        fix of nice board games. All games with up to 4 hours duration allowed.
+                    </p>
                 </div>
-                <div class="events-left-divider" id="monthly">
-                    <h3>Monthly Events</h3>
-                    <div class="event-left-divider-content" id="event-monthly1">
-                        <h4>
-                            Thematic Nights
-                        </h4>
-                        <p>
-                            That's a new one: on the last Tuesday of every month, we open one more day for a thematic
-                            night! The theme can be a setting (trading in the Mediterranean (lol!) with Concordia, The
-                            Voyages of Marco Polo etc) or a game type (card game night, with everything under the sun).
-                            Sessions go from 18h to 22h.
-                        </p>
-                    </div>
-                    <div class="event-left-divider-content" id="event-monthly2">
-                        <h4>
-                            Heavy Weights Weekend
-                        </h4>
-                        <p>
-                            On the last weekend of every month, we gather all our top strategists for a whole weekend
-                            (you read right - a whole weekend!) of fun and, well, strategy. Since we include the likes
-                            of Twilight Imperium 4 and 18XXs in those sessions, we start earlier on Saturday, at 9h, and
-                            finish late, at 23h. If your game lasts more than that (which pretty much means those two
-                            games we mentioned...), you can come back on Sunday to finish it!
-                        </p>
-                    </div>
+                <div class="event-left-divider-content" id="event-weekly2">
+                    <h4>
+                        Younglings Afternoons
+                    </h4>
+                    <p>
+                        This event takes place every Wednesday, from 13h to 18h and offers the nicest, most fun
+                        games for little people ages 4 to 13 (14 or above? Your gaming experience has not limits, so
+                        you're welcome to our adult events!)
+                    </p>
                 </div>
             </div>
-
-            <!-- Contact form -->
-            <div class="events-right">
-                <h2>Want to join us for a section? Get in touch!</h2>
-                <form class="contact-form" action="index.html">
-                    <div class="form-name">
-                        <p>
-                            <label for="full-name" class="visuallyhidden">
-                                Full name:
-                            </label>
-                            <input type="text" id="full-name" name="full-name" placeholder="Your full name" required />
-                        </p>
-                    </div>
-                    <div class="contact-visitors">
-                        <label for="number-visitor">
-                            How many people will come? (including you)
-                        </label>
-                        <input type="number" id="number-visitor" name="number-visitor" min="1" required />
-                    </div>
-                    <div>
-                        <label for="contact-message">
-                            Which events and dates would you like to join?
-                        </label>
-                        <input type="text" id="message" name="contact-message" required minlength="1" maxlength="200"
-                            size="200">
-                    </div>
-                    <div>
-                        <button> Submit </button>
-                    </div>
-                </form>
-
+            <div class="events-left-divider" id="monthly">
+                <h3>Monthly Events</h3>
+                <div class="event-left-divider-content" id="event-monthly1">
+                    <h4>
+                        Thematic Nights
+                    </h4>
+                    <p>
+                        That's a new one: on the last Tuesday of every month, we open one more day for a thematic
+                        night! The theme can be a setting (trading in the Mediterranean (lol!) with Concordia, The
+                        Voyages of Marco Polo etc) or a game type (card game night, with everything under the sun).
+                        Sessions go from 18h to 22h.
+                    </p>
+                </div>
+                <div class="event-left-divider-content" id="event-monthly2">
+                    <h4>
+                        Heavy Weights Weekend
+                    </h4>
+                    <p>
+                        On the last weekend of every month, we gather all our top strategists for a whole weekend
+                        (you read right - a whole weekend!) of fun and, well, strategy. Since we include the likes
+                        of Twilight Imperium 4 and 18XXs in those sessions, we start earlier on Saturday, at 9h, and
+                        finish late, at 23h. If your game lasts more than that (which pretty much means those two
+                        games we mentioned...), you can come back on Sunday to finish it!
+                    </p>
+                </div>
             </div>
-
-        </section>
-
-        <!-- Gallery with photos from latest events and games collection -->
-        <section class="gallery-container">
-            <h2 class="gallery-title">Last events</h2>
-            <p class="gallery-description">
-                Here you can check some of our latest events and part of our sweet board game collection.
-            </p>
-            <div class="gallery-content"><img src="" alt=""></div>
-            <div class="gallery-content"><img src="" alt=""></div>
-            <div class="gallery-content"><img src="" alt=""></div>
-            <div class="gallery-content"><img src="" alt=""></div>
-            <div class="gallery-content"><img src="" alt=""></div>
-            <div class="gallery-content"><img src="" alt=""></div>
-            <div class="gallery-content"><img src="" alt=""></div>
-            <div class="gallery-content"><img src="" alt=""></div>
-            <div class="gallery-content"><img src="" alt=""></div>
-        </section>
-
-
-
-
-    </body>
-
-    <!-- Footer. Includes address, newsletter subscription
-     and social media links. -->
-    <footer id="footer">
-        <div class="footer-container">
-            <section id="footer-logo">
-                <img class="logo-img" alt="Anima Mundi Board Game Club Logo" src="assets/???" />
-            </section>
-            <section id="footer-address">
-                <p>
-                    Rua Carijos, 202, Jardim da Penha, Vitoria, ES
-                </p>
-            </section>
-            <section id="footer-newsletter">
-                <p>
-                    Newsletter form goes here???
-                </p>
-            </section>
-            <section id="footer-social-media">
-                <p>
-                    Social media images go here???
-                </p>
-            </section>
         </div>
-    </footer>
+
+        <!-- Contact form -->
+        <div class="events-right">
+            <h2>Want to join us for a section? Get in touch!</h2>
+            <form class="contact-form" action="index.html">
+                <div class="form-name">
+                    <p>
+                        <label for="full-name" class="visuallyhidden">
+                            Full name:
+                        </label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Your full name" required />
+                    </p>
+                </div>
+                <div class="contact-visitors">
+                    <label for="number-visitor">
+                        How many people will come? (including you)
+                    </label>
+                    <input type="number" id="number-visitor" name="number-visitor" min="1" required />
+                </div>
+                <div>
+                    <label for="contact-message">
+                        Which events and dates would you like to join?
+                    </label>
+                    <input type="text" id="message" name="contact-message" required minlength="1" maxlength="200"
+                        size="200">
+                </div>
+                <div>
+                    <button> Submit </button>
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Gallery with photos from latest events and games collection -->
+    <section class="gallery-container">
+        <h2 class="gallery-title">Last events</h2>
+        <p class="gallery-description">
+            Here you can check some of our latest events and part of our sweet board game collection.
+        </p>
+        <div class="gallery-content"><img src="" alt=""></div>
+        <div class="gallery-content"><img src="" alt=""></div>
+        <div class="gallery-content"><img src="" alt=""></div>
+        <div class="gallery-content"><img src="" alt=""></div>
+        <div class="gallery-content"><img src="" alt=""></div>
+        <div class="gallery-content"><img src="" alt=""></div>
+        <div class="gallery-content"><img src="" alt=""></div>
+        <div class="gallery-content"><img src="" alt=""></div>
+        <div class="gallery-content"><img src="" alt=""></div>
+    </section>
+
+
+
+
+</body>
+
+<!-- Footer. Includes address, newsletter subscription
+     and social media links. -->
+<footer id="footer">
+    <div class="footer-container">
+        <section id="footer-logo">
+            <img class="logo-footer" alt="Anima Mundi Board Game Club Logo" src="assets/logos/logo-footer.png">
+        </section>
+        <section id="footer-newsletter">
+            <form action="index.html">
+                <label for="newsletter">Newsletter:</label>
+                <br>
+                <input type="email" placeholder="Your email" required>
+                <button>Subscribe</button>
+            </form>
+        </section>
+        <section id="footer-address">
+            <p>
+                Rua Carijos, 202, Jardim da Penha, Vitoria, ES
+            </p>
+            <p>
+                +55 27 3233-8313
+            </p>
+        </section>
+        <section id="footer-social-media">
+            <p>
+                Social media images go here???
+            </p>
+        </section>
+    </div>
+</footer>
 
 </html>
