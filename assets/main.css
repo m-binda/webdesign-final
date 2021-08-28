@@ -137,7 +137,7 @@ header {
 
 /* Reviews page style start */
 
-/* Articles */
+/* Styles for the top of the page */
 .reviews-titles {
   text-align: center;
   justify-content: center;
@@ -223,13 +223,26 @@ header {
 /* Videos */
 .videos-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
-  
+  grid-template-columns: repeat(auto-fit, minmax(650px, 750px));
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.videos-child {
+  margin: 30px 30px;
+  padding: 20px 0;
+  border: 2px solid #003049;
+}
+
+.videos-child h3 {
+  text-transform: uppercase;
+  margin: 10px 0;
 }
 
 iframe {
-  width: 700px;
-  height: 500px;
+  width: 600px;
+  height: 340px;
 }
 
 /* Reviews page style end */
