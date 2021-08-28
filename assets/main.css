@@ -140,8 +140,66 @@ header {
 
 /* Events styles start */
 
+.events-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  justify-content: space-evenly;
+  margin:  0px 40px;
+  padding: 20px;
+}
 
+/* Changes to stacked display when below 1200px */
+@media (max-width: 1200px){
+  .events-container {
+    display: block;
+  }
+}
 
+.events-child {
+  padding: 20px;
+  margin: 0 20px;
+}
+
+.events-title {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  background-color: #f780003d;
+}
+
+#weekly-monthly {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+@media (max-width: 860px){
+  #weekly-monthly {
+    display: block;
+  }
+}
+
+.events-left-divider h3 {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #003049;
+}
+
+.event-content h4 {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.event-content {
+  margin: 15px;
+  padding: 15px;
+  text-align: justify;
+}
+
+textarea {
+  resize: none;
+}
 /* Events styles end */
 
 
