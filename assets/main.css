@@ -133,6 +133,8 @@ header {
 
 /* Reviews page style start */
 
+/* Articles */
+
 
 /* Videos */
 .videos-container {
@@ -152,7 +154,7 @@ iframe {
 .footer-container {
   background-color: #003049;
   display: grid;
-  grid-template-columns: 12% 8% 60% 20%;
+  grid-template-columns: 20% 60% 20%;
   align-items: center;
   text-align: center;
   justify-content:space-around;
@@ -167,12 +169,21 @@ iframe {
 
 #footer-newsletter {
   text-align: left;
+  margin-left: 10%;
 }
 
 #footer-newsletter button{
   padding: 2px 3px;
 }
 
+#footer-address {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content:space-around;
+  margin: 0 100px;
+}
 
 /* 
 Color pallete:
