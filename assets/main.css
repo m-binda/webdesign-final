@@ -299,7 +299,7 @@ header {
   object-fit: cover;
 }
 
-.opened-img {
+#openedImgBox {
   width: 100%;
   height: 100vh;
   background-color: rgba(0,0,0,0.9);
@@ -311,9 +311,10 @@ header {
   justify-content: center;
 }
 
-.opened-img img{
-  width: 90%;
-  max-width: 800px;
+#openedImg {
+  /* width: 90%; */
+  max-height: 80%;
+  max-width: 80%;
 }
 
 #closeX {
@@ -336,11 +337,24 @@ header {
 }
 
 #left {
-  left: 15%;
+  left: 10%;
 }
 
 #right {
-  right: 15%;
+  right: 10%;
+}
+
+/* Moves navigation arrows to the bottom for mobile users */
+@media (max-width: 1200px){
+  #left {
+    left: 35%;
+    top: 90%;
+  }
+  
+  #right {
+    right: 35%;
+    top: 90%;
+  }
 }
 
 

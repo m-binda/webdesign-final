@@ -48,15 +48,23 @@ function openLarge() {
 rightArrow.addEventListener("click", goNext);
 leftArrow.addEventListener("click", goPrev);
 
-// Event listener for keyboard arrow press
+// Event listeners for clicks on the X to close the large image
+closeX.addEventListener("click", closeImage);
+
+// Event listener for keyboard arrow presses
 document.addEventListener('keydown', function (event) {
-    // If right arrow key is pressed, moves to next photo
+    // If the right arrow key is pressed, moves to next photo
     if (event.key == 'ArrowRight') {
         goNext();
     }
-    // If left arrow key is pressed, moves to previous photo
+    // If the left arrow key is pressed, moves to previous photo
     else if (event.key == 'ArrowLeft') {
         goPrev();
+    }
+
+    // If the escape key is pressed, closes the large image
+    else if (event.key == 'Escape') {
+        closeImage();
     }
 });
 
@@ -117,8 +125,8 @@ function goPrev() {
 };
 
 
-// Function to close the large image.
-closeX.addEventListener("click", function () {
-    // Updates display to none
-    document.getElementById("openedImgBox").style.display = "none";
-});
+// Function to close the large image
+function closeImage() {
+    largeImageBox.style.display = "none";
+}
+
