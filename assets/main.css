@@ -546,6 +546,8 @@ iframe {
   }
 }
 /* COVID-19 page styles end */
+
+/* About us page styles begin */
 #about-us-container {
   display: flex;
   flex-wrap: wrap;
@@ -577,6 +579,7 @@ iframe {
 
 .about-us-text {
   padding: 20px;
+  text-align: justify;
 }
 
 .about-us-text p {
@@ -594,10 +597,7 @@ iframe {
   width: 100%;
   max-width: 600px;
 }
-/* About ut page styles begin */
-
-
-/* About ut page styles end */
+/* About us page styles end */
 
 /* Footer */
 .footer-container {
