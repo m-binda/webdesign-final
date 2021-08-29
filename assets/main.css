@@ -353,13 +353,10 @@ header {
 .button-review:hover {
   background-color: #002f4932;
   cursor: pointer;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 3px #002f4932;
 }
 
 .button-review:active {
   cursor: pointer;
-  /* transform: translateY(2px); */
 }
 
 /* Articles */
