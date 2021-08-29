@@ -299,7 +299,7 @@ header {
   object-fit: cover;
 }
 
-.full-img {
+.opened-img {
   width: 100%;
   height: 100vh;
   background-color: rgba(0,0,0,0.9);
@@ -311,7 +311,7 @@ header {
   justify-content: center;
 }
 
-.full-img img{
+.opened-img img{
   width: 90%;
   max-width: 800px;
 }

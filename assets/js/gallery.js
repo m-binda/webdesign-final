@@ -6,8 +6,8 @@
 let photoCollection = document.getElementsByClassName("gallery-image")
 
 // Gets large image and its enclosing div
-let largeImageBox = document.getElementById("fullImgBox");
-let largeImage = document.getElementById("fullImg");
+let largeImageBox = document.getElementById("openedImgBox");
+let largeImage = document.getElementById("openedImg");
 
 // Get the navigation elements of the gallery once the image is opened
 let leftArrow = document.getElementById("left");
@@ -24,7 +24,7 @@ let lastImage = {
     alt: photoCollection[photoCollection.length - 1].alt
 };
 
-// Loop to go through the photoCollection array
+// Loops through the photoCollection array
 for (let i = 0; i < photoCollection.length; i++) {
 
     // Adds event listener to array
@@ -43,8 +43,23 @@ function openLarge() {
 
 
 // Event listeners to move to the previous and next photos
+
+// Event listeners for clicks on the arrows
 rightArrow.addEventListener("click", goNext);
 leftArrow.addEventListener("click", goPrev);
+
+// Event listener for keyboard arrow press
+document.addEventListener('keydown', function (event) {
+    // If right arrow key is pressed, moves to next photo
+    if (event.key == 'ArrowRight') {
+        goNext();
+    }
+    // If left arrow key is pressed, moves to previous photo
+    else if (event.key == 'ArrowLeft') {
+        goPrev();
+    }
+});
+
 
 // Function to move to the next photo
 function goNext() {
@@ -105,5 +120,5 @@ function goPrev() {
 // Function to close the large image.
 closeX.addEventListener("click", function () {
     // Updates display to none
-    document.getElementById("fullImgBox").style.display = "none";
+    document.getElementById("openedImgBox").style.display = "none";
 });

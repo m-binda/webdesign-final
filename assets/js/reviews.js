@@ -1,4 +1,3 @@
-
 // ----------------------------
 // Toggles visibility of Articles and Videos sections on review.html
 // ----------------------------
