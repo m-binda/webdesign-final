@@ -162,6 +162,10 @@ header {
   padding: 10px 20px;
 }
 
+.index-section-title {
+  text-align: center;
+}
+
 .main-container section {
   padding: 30px 20px;
   margin: 10px;
