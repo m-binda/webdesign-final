@@ -105,6 +105,7 @@ header {
   display: none;
 }
 
+/* Add a hamburger menu for mobile users and hide the nav bar */
 @media (max-width: 700px) {
   #menuBurger {
     display: block;
@@ -142,6 +143,11 @@ header {
   padding: 10px;
 }
 
+#covid19:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /* Index styles start */
 /* Main container */
 .main-container {
@@ -169,9 +175,41 @@ header {
   padding: 5px 0;
 }
 
+/* Places the most played list on the left */
 .most-played-mid {
   order: -1;
 }
+
+/* Adjusts the positions for 1200px */
+@media (max-width: 1200px) {
+
+  /* Stacks the content */
+  .main-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+  /* Places the most played list in its orignal position */
+  .most-played-mid {
+    order: 0;
+  }
+
+  /* Creates three columns for the most played list */
+  .most-played-mid ol {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+  }
+}
+
+/* Adjusts the position for 700px */
+@media (max-width: 700px) {
+  /* Makes the list into one column again */
+  .most-played-mid ol {
+    display:block;
+  }
+}
+
+
 
 .subsection-title {
   margin: 30px 0;
