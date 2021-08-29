@@ -316,13 +316,31 @@ header {
   max-width: 800px;
 }
 
-.full-img span {
+#closeX {
   position: absolute;
   top: 5%;
   right: 5%;
   font-size: 25px;
   color: #f1faee;
   cursor: pointer;
+}
+
+#left, #right {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  font-size: 25px;
+  color: #f1faee;
+  cursor: pointer;
+  font-size: 60px;
+}
+
+#left {
+  left: 15%;
+}
+
+#right {
+  right: 15%;
 }
 
 
