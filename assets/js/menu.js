@@ -10,10 +10,10 @@ menuBurger.addEventListener("click", function () {
     let siteMenu = document.getElementById("nav-bar");
 
     // Opens and closes the nav bar depending on its initial display value
-    if (siteMenu.style.display === "block") {
-        document.getElementById("nav-bar").style.display = "none";
+    if (siteMenu.style.display === "block" || siteMenu.style.display === "") {
+        siteMenu.style.display = "none";
     } else {
-        document.getElementById("nav-bar").style.display = "block";
+        siteMenu.style.display = "block";
     }
 });
 

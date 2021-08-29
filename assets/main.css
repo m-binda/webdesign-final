@@ -65,7 +65,7 @@ header {
 #title nav,
 #menuBurger{
   width: 100%;
-  height: 50px;
+  height: 40px;
   text-decoration: none;
 }
 
@@ -92,11 +92,7 @@ header {
 }
 
 #title #current,
-#title #current:hover {
-  background-color: #f1faee;
-  color: #003049;
-}
-
+#title #current:hover,
 #title .nav-bar a:hover {
   background-color: #f1faee;
   color: #003049;
@@ -114,14 +110,13 @@ header {
   }
 
   .nav-bar {
-    display: none;
     flex-direction: column;
     text-align: center;
     margin-top: 0;
   }
 
   .nav-bar li {
-    margin: 15px;
+    margin: 10px;
   }
 
   .icon {
