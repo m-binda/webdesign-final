@@ -477,12 +477,18 @@ iframe {
   grid-template-columns: 50% 50%;
   align-items: center;
   justify-content: center;
-  text-align: justify;
+  text-align: center;
   margin: 40px 10px;
-  padding: 5px;
+  padding: 30px;
+  border: 1px solid #003049;
+}
+
+#covid-container p{
+  text-align: justify;
 }
 
 #covid-container img {
+  align-items: center;
   max-width: 400px;
   width: 90%;
 }
@@ -500,6 +506,10 @@ iframe {
   @media (max-width: 700px) {
     #covid-container div{
       display: block;
+    }
+
+    #covid-container p{
+      text-align: center;
     }
   }
 }
