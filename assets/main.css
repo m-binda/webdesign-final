@@ -150,9 +150,8 @@ header {
 }
 
 /* Index styles start */
+
 /* Main container */
-
-
 .main-container {
   display: grid;
   grid-template-columns: 20% 50% 30%;
@@ -213,12 +212,18 @@ header {
   }
 }
 
-
-
 .subsection-title {
   margin: 30px 0;
   text-align: center;
 }
+
+/* Map styles */
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+
 /* Index styles end */
 
 
