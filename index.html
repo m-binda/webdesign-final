@@ -7,14 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anima Mundi Board Game Club</title>
 
-    <!-- TODO: Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- TODO: Main stylesheet -->
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="assets/main.css">
+
+    <!-- Hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -28,13 +31,18 @@
             </a>
         </div>
         <!-- Navigation bar -->
-        <ul class="nav-bar">
+        <a href="javascript:void(0);" class="icon" id="menuBurger">
+            <i class="fa fa-bars"></i>
+            <span>MENU</span>
+        </a>
+        <ul class="nav-bar" id="nav-bar">
             <li><a id="current" href="index.html">Home</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="reviews.html">Game Reviews</a></li>
             <li><a href="membership.html">Membership</a></li>
             <li><a href="about_us.html">About us</a></li>
         </ul>
+
     </header>
     <section id="covid19-container">
         <div id="covid19">
@@ -159,6 +167,9 @@
             </section>
         </div>
     </footer>
+
+    <!-- JS Script for menu -->
+    <script src="assets/js/menu.js"></script>
 
 </body>
 
