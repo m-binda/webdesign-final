@@ -16,7 +16,7 @@
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="assets/main.css">
 
-    <!-- Hamburger icon -->
+    <!-- Hamburger icon and logo for smaller screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -26,7 +26,7 @@
         <!-- Site logo -->
         <div>
             <a class="logo" href="index.html">
-                <img class="logo-img" alt="Anima Mundi Board Game Club Logo" src="assets/logos/logo-rect.png">
+                <img id="logo-img" alt="Anima Mundi Board Game Club Logo" src="assets/logos/logo-rect.png">
                 <!-- <h1 class="logo-title">Anima Mundi Board Game Club</h1> -->
             </a>
         </div>
@@ -45,9 +45,9 @@
 
     </header>
     <section id="covid19-container">
-        <div id="covid19">
+        <a href="covid19.html" id="covid19">
             <p>COVID-19 - Check here to see our guidelines</p>
-        </div>
+        </a>
     </section>
 
 
@@ -159,30 +159,29 @@
 
     <!-- Footer. Includes address, newsletter subscription
      and social media links. -->
-    <footer id="footer">
-        <div class="footer-container">
-            <section id="footer-newsletter">
-                <form action="index.html">
-                    <label for="newsletter">Newsletter:</label>
-                    <br>
-                    <input type="email" placeholder="Your email" required>
-                    <button>Subscribe</button>
-                </form>
-            </section>
-            <section id="footer-address">
-                <img class="logo-footer" alt="Anima Mundi Board Game Club Logo" src="assets/logos/logo-footer.png">
-                <p>
-                    Rua Carijos, 202, Jardim da Penha, Vitoria, ES
-                    <br>
-                    +55 27 3233-8313
-                </p>
-            </section>
-            <section id="footer-social-media">
-                <p>
-                    Social media images go here???
-                </p>
-            </section>
-        </div>
+    <footer class="footer-container">
+        <section id="footer-newsletter">
+            <form action="index.html">
+                <label for="newsletter">Newsletter:</label>
+                <br>
+                <input type="email" placeholder="Your email" required>
+                <br>
+                <button>Subscribe</button>
+            </form>
+        </section>
+        <img class="logo-footer" alt="Anima Mundi Board Game Club Logo" src="assets/logos/logo-rect.png">
+        <section id="footer-address">
+            <p>
+                Rua Carijos, 202, Jardim da Penha, Vitoria, ES
+                <br>
+                +55 27 3233-8313
+            </p>
+        </section>
+        <section id="footer-social-media">
+            <img src="/assets/logos/facebook.png" alt="Facebook Link">
+            <img src="/assets/logos/instagram.png" alt="Instagram Link">
+            <img src="/assets/logos/twitter.png" alt="Twitter Link">
+        </section>
     </footer>
 
     <!-- JS Script for the gallery -->

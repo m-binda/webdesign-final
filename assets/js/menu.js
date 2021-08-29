@@ -16,3 +16,13 @@ menuBurger.addEventListener("click", function () {
         document.getElementById("nav-bar").style.display = "block";
     }
 });
+
+// Changes the logo for a more vertical one for smaller screens.
+let screenWidth = window.innerWidth;
+let newLogo = document.getElementById("logo-img");
+
+if (screenWidth < 700) {
+    newLogo.src = 'assets/logos/logo-up.png';
+    newLogo.style.height = "250px"
+    newLogo.style.width = "250px"
+};

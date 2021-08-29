@@ -49,14 +49,15 @@ header {
   background-color: #003049;
 }
 
-.logo-img {
+#logo-img {
   max-width: 600px;
 }
 
 /* Make the logo smaller for mobile users */
 @media (max-width: 700px) {
-  .logo-img {
+  #logo-img {
     width: 100%;
+    src:local("assets/logos/logo-footer.png") ;
   }
 }
 
@@ -324,10 +325,6 @@ header {
 }
 
 
-/* Form styles */
-textarea {
-  resize: none;
-}
 /* Events styles end */
 
 
@@ -335,32 +332,33 @@ textarea {
 /* Styles for the top of the page */
 .reviews-titles {
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin: 40px;
+  justify-content: bottom;
 }
 
 .button-review {
-  font-size: 2em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 600;
   background-color: #f1faee;
   text-align: center;
   display: inline-block;
-  margin: 10px 80px;
-  padding: 10px;
-  border: solid 4px #003049;
+  margin: 0 80px;
+  margin-top: 20px;
+  padding: 20px;
+  border: none;
   transition: 0.2s;
 }
 
 .button-review:hover {
-  background-color: #f7800065;
+  background-color: #002f4932;
   cursor: pointer;
   transform: translateY(-3px);
-  box-shadow: 0 5px 3px #002f4952;
+  box-shadow: 0 4px 3px #002f4932;
 }
 
 .button-review:active {
   cursor: pointer;
-  transform: translateY(2px);
+  /* transform: translateY(2px); */
 }
 
 /* Articles */
@@ -370,6 +368,8 @@ textarea {
   align-items: center;
   margin: 0 10%;
   display: block;
+  padding: 20px;
+  background-color: #002f4932;
 }
 
 .article {
@@ -378,20 +378,13 @@ textarea {
   padding: 20px;
   display: grid;
   grid-template-columns: 300px 1fr;
+  border-bottom: 1px solid black;
 }
 
 @media (max-width: 700px) {
   .article {
     display: block;
   }
-}
-
-.article:nth-of-type(2n-1) {
-  background-color: #002f4932;
-}
-
-.article:nth-of-type(2n) {
-  background-color: #f780003d;
 }
 
 .article-title {
@@ -427,11 +420,14 @@ textarea {
 
 #videos-section {
   display: none;
+  padding: 20px;
+  background-color: #002f4932;
+  margin: 0 10%;
 }
 
 .videos-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 750px));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 700px));
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -449,29 +445,84 @@ textarea {
 }
 
 iframe {
-  height: 390px;
+  height: 360px;
   width: 100%;
+}
+/* Reviews page style end */
+
+
+/* COVID-19 page styles begin */
+
+#covid-title {
+  text-align: center;
+  margin: 10px 200px;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  background-color: #f77f00;
+  padding: 10px;
+}
+
+#covid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 200px;
+}
+
+#covid-container div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  margin: 40px 10px;
+  padding: 5px;
+}
+
+#covid-container img {
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Adjusments for smaller screens */
+@media (max-width: 1200px) {
+  #covid-title {
+    margin: 30px;
+  }
+  
+  #covid-container{
+    display: block;
+    margin: 30px;
+  }
+  @media (max-width: 700px) {
+    #covid-container div{
+      display: block;
+    }
+  }
 }
 
 
-/* Reviews page style end */
 
 
 /* Footer */
 .footer-container {
   background-color: #003049;
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 15% 10% 40% 25%;
   align-items: center;
   text-align: center;
   justify-content:space-around;
   color:#f77f00;
   font-size: 1.1em;
-  padding: 0;
+  padding: 20px;
+  height: 100%;
 }
 
 .logo-footer {
-  width: 150px;
+  width: 180px;
 }
 
 #footer-newsletter {
@@ -490,6 +541,24 @@ iframe {
   align-items: center;
   justify-content:space-around;
   margin: 0 100px;
+}
+
+#footer-social-media {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+#footer-social-media img {
+  width: 30px;
+  margin: 10px;
+}
+
+/* Adjust the footer for smaller screens */
+@media (max-width: 700px) {
+  .footer-container {
+  display: block;
+  }
 }
 
 /* 
