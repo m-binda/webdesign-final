@@ -309,6 +309,11 @@ header {
   cursor: pointer;
   object-fit: cover;
   border-radius: 10%;
+  transition: 0.5s;
+}
+
+.gallery-image:hover {
+  transform: scale(0.9);
 }
 
 #openedImgBox {
@@ -321,10 +326,10 @@ header {
   display: none;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 #openedImg {
-  /* width: 90%; */
   max-height: 80%;
   max-width: 80%;
 }
