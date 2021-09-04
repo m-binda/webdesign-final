@@ -1,10 +1,10 @@
 /* Reset styles */
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: 0;
-    box-sizing: border-box;
-  }
+  padding: 0;
+  margin: 0;
+  text-decoration: 0;
+  box-sizing: border-box;
+}
 
 
 
@@ -68,7 +68,7 @@ header {
 
 /* Navigation bar and burger icon (only for smaller screen) */
 #title nav,
-#menuBurger{
+#menuBurger {
   width: 100%;
   height: 40px;
   text-decoration: none;
@@ -90,9 +90,9 @@ header {
 }
 
 #title .nav-bar a,
-#menuBurger{
+#menuBurger {
   padding: 10px 15px;
-  color:#f77f00;
+  color: #f77f00;
   transition: background-color 0.5s;
 }
 
@@ -187,9 +187,9 @@ header {
 
   /* Stacks the sections */
   .main-container {
-      display: flex;
-      flex-direction: column;
-    }
+    display: flex;
+    flex-direction: column;
+  }
 
   /* Places the most played list in its original position */
   .most-played-mid {
@@ -205,9 +205,10 @@ header {
 
 /* Adjusts the position for 700px */
 @media (max-width: 700px) {
+
   /* Makes the list into one column again */
   .most-played-mid ol {
-    display:block;
+    display: block;
   }
 }
 
@@ -219,6 +220,50 @@ header {
 /* Index styles end */
 
 
+/* Membership styles start */
+
+.main-membership {
+  display: flex;
+  justify-content: center;
+}
+
+.main-membership h2,
+.main-membership h3 {
+  padding: 10px 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.membership-container {
+  padding: 10px 20px;
+  margin: 20px;
+  max-width: 800px;
+}
+
+.membership-content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.membership-options {
+  margin: 15px;
+  padding: 40px;
+  background-color: #002f4932;
+  position: relative;
+}
+
+.membership-options p .price {
+  position: absolute;
+  top: 90%;
+  right: 10%;
+  font-weight: 700;
+}
+
+
+/* Membership styles end */
+
+
 /* Events styles start */
 .events-container {
   display: grid;
@@ -228,7 +273,7 @@ header {
 }
 
 /* Changes to stacked display when below 1200px */
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
   .events-container {
     display: block;
   }
@@ -312,7 +357,7 @@ header {
 #openedImgBox {
   width: 100%;
   height: 100vh;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: 0;
   left: 0;
@@ -336,7 +381,8 @@ header {
   cursor: pointer;
 }
 
-#left, #right {
+#left,
+#right {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -355,12 +401,12 @@ header {
 }
 
 /* Moves navigation arrows to the bottom for mobile users */
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
   #left {
     left: 35%;
     top: 90%;
   }
-  
+
   #right {
     right: 35%;
     top: 90%;
@@ -494,6 +540,7 @@ iframe {
   height: 360px;
   width: 100%;
 }
+
 /* Reviews page style end */
 
 
@@ -529,7 +576,7 @@ iframe {
   border: 1px solid #003049;
 }
 
-#covid-container p{
+#covid-container p {
   text-align: justify;
 }
 
@@ -544,21 +591,23 @@ iframe {
   #covid-title {
     margin: 30px;
   }
-  
-  #covid-container{
+
+  #covid-container {
     display: block;
     margin: 30px;
   }
+
   @media (max-width: 700px) {
-    #covid-container div{
+    #covid-container div {
       display: block;
     }
 
-    #covid-container p{
+    #covid-container p {
       text-align: center;
     }
   }
 }
+
 /* COVID-19 page styles end */
 
 /* About us page styles begin */
@@ -580,6 +629,7 @@ iframe {
   padding: 10px;
   margin: 10px;
 }
+
 .about-us-content {
   display: flex;
   flex-wrap: wrap;
@@ -611,6 +661,7 @@ iframe {
   width: 100%;
   max-width: 600px;
 }
+
 /* About us page styles end */
 
 /* Footer */
@@ -620,8 +671,8 @@ iframe {
   grid-template-columns: 15% 10% 40% 25%;
   align-items: center;
   text-align: center;
-  justify-content:space-around;
-  color:#f77f00;
+  justify-content: space-around;
+  color: #f77f00;
   font-size: 1.1em;
   padding: 20px;
   height: 100%;
@@ -636,7 +687,7 @@ iframe {
   margin-left: 10%;
 }
 
-#footer-newsletter button{
+#footer-newsletter button {
   padding: 2px 3px;
 }
 
@@ -645,7 +696,7 @@ iframe {
   flex-direction: row;
   text-align: center;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   margin: 0 100px;
 }
 
@@ -663,7 +714,7 @@ iframe {
 /* Adjust the footer for smaller screens */
 @media (max-width: 700px) {
   .footer-container {
-  display: block;
+    display: block;
   }
 }
 
