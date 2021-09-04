@@ -27,14 +27,16 @@
         <div>
             <a class="logo" href="index.html">
                 <img id="logo-img" alt="Anima Mundi Board Game Club Logo" src="assets/logos/logo-rect.png">
-                <!-- <h1 class="logo-title">Anima Mundi Board Game Club</h1> -->
             </a>
         </div>
+
         <!-- Navigation bar -->
+        <!-- Adds hamburger icon -->
         <a href="javascript:void(0);" class="icon" id="menuBurger">
             <i class="fa fa-bars"></i>
             <span>MENU</span>
         </a>
+        <!-- Menu -->
         <ul class="nav-bar" id="nav-bar">
             <li><a href="index.html">Home</a></li>
             <li><a href="events.html">Events</a></li>
@@ -43,17 +45,18 @@
         </ul>
 
     </header>
+
+    <!-- Link to the COVID guidelines -->
     <section id="covid19-container">
         <a href="covid19.html" id="covid19">
             <p>COVID-19 - Check here to see our guidelines</p>
         </a>
     </section>
 
-
-    <!-- Buttons for the sections to be chosen with JS -->
     <h1>Article and Video Reviews</h1>
     <main>
 
+        <!-- Buttons to access the sections. The sections are displayed according to the script on reviews.js -->
         <div class="reviews-titles">
             <button class="button-review" id="button-review-articles">
                 Articles
@@ -63,7 +66,7 @@
             </button>
         </div>
 
-        <!-- Written reviews -->
+        <!-- Written reviews main container -->
         <section id="articles-section">
             <h3 class="subsection-title">
                 Here you'll find some of our own reviews of our favorite games.
@@ -361,7 +364,7 @@
             </div>
         </section>
 
-        <!-- Video reviews -->
+        <!-- Video reviews main container -->
         <section id="videos-section">
             <h3 class="subsection-title">
                 Here we post some of our favorite reviews from our favorite reviewers!
@@ -444,11 +447,11 @@
         </section>
     </footer>
 
+    <!-- JS Script for menu and logo for small screens -->
+    <script src="assets/js/menu.js"></script>
+
     <!-- JS Script to switch between Articles and Videos sections -->
     <script src="assets/js/reviews.js"></script>
-
-    <!-- JS Script for menu -->
-    <script src="assets/js/menu.js"></script>
 
 </body>
 

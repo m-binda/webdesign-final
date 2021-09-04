@@ -29,11 +29,14 @@
                 <img id="logo-img" alt="Anima Mundi Board Game Club Logo" src="assets/logos/logo-rect.png">
             </a>
         </div>
+
         <!-- Navigation bar -->
+        <!-- Adds hamburger icon -->
         <a href="javascript:void(0);" class="icon" id="menuBurger">
             <i class="fa fa-bars"></i>
             <span>MENU</span>
         </a>
+        <!-- Menu -->
         <ul class="nav-bar" id="nav-bar">
             <li><a href="index.html">Home</a></li>
             <li><a id="current" href="events.html">Events</a></li>
@@ -42,6 +45,8 @@
         </ul>
 
     </header>
+
+    <!-- Link to the COVID guidelines -->
     <section id="covid19-container">
         <a href="covid19.html" id="covid19">
             <p>COVID-19 - Check here to see our guidelines</p>
@@ -53,12 +58,13 @@
 
     <h1>Board Game Events</h1>
 
+    <!-- Main content -->
     <main class="events-container">
 
-        <!-- Current events -->
-        <div class="events-child" id="events-left">
+        <!-- Current events main container -->
+        <div class="events-child">
             <h2 class="events-title">Current Events</h2>
-            <div id="weekly-monthly">
+            <div id="events-left">
                 <div class="events-left-divider" id="weekly">
                     <h3>Weekly Events</h3>
                     <div class="event-content" id="event-weekly1">
@@ -111,21 +117,29 @@
             </div>
         </div>
 
-        <!-- Gallery with photos from latest events and games collection -->
+        <!-- Gallery with photos from latest events and game collection -->
         <div class="events-child" id="events-right">
             <h2 class="events-title">Past events</h2>
             <p id="gallery-description">
                 Here you can check some of our latest events and part of our sweet board game collection.
             </p>
 
+            <!-- Div for the opened large image -->
             <div class="opened-img" id="openedImgBox">
-                <i id="left" class="fas fa-angle-left"></i>
+
+                <!-- Image to be opened. Change by gallery.js -->
                 <img src="assets/images/events/7thcontinent.jpg"
                     alt="An ongoing session of the board game 7Th Continent" id="openedImg">
+
+                <!-- X button to close the large image -->
                 <i id="closeX" class="fas fa-times"></i>
+
+                <!-- Navigation arrows -->
                 <i id="right" class="fas fa-angle-right"></i>
+                <i id="left" class="fas fa-angle-left"></i>
             </div>
 
+            <!-- All images in the gallery -->
             <div id="gallery-container">
                 <img class="gallery-image" src="assets/images/events/7thcontinent.jpg"
                     alt="An ongoing session of the board game 7Th Continent">
@@ -151,7 +165,6 @@
                 <img class="gallery-image" src="assets/images/events/village.jpg"
                     alt="An ongoing session of the board game Village">
             </div>
-        </div>
         </div>
 
     </main>
@@ -187,7 +200,7 @@
     <!-- JS Script for the gallery -->
     <script src="assets/js/gallery.js"></script>
 
-    <!-- JS Script for menu -->
+    <!-- JS Script for menu and logo for small screens -->
     <script src="assets/js/menu.js"></script>
 
     <!-- Script for navigation elements of the gallery -->

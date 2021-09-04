@@ -58,15 +58,15 @@ header {
   max-width: 600px;
 }
 
-/* Make the logo smaller for mobile users */
+/* Make the logo smaller for mobile users. The logo image 
+/* is changed by menu.js */
 @media (max-width: 700px) {
   #logo-img {
     width: 100%;
-    src:local("assets/logos/logo-footer.png") ;
   }
 }
 
-/* Navigation bar */
+/* Navigation bar and burger icon (only for smaller screen) */
 #title nav,
 #menuBurger{
   width: 100%;
@@ -85,7 +85,7 @@ header {
   font-size: 1.1em;
 }
 
-.icon {
+#menuBurger {
   display: none;
 }
 
@@ -96,6 +96,7 @@ header {
   transition: background-color 0.5s;
 }
 
+/* Adds effect for current page and hovered pages on the menu */
 #title #current,
 #title #current:hover,
 #title .nav-bar a:hover {
@@ -103,15 +104,12 @@ header {
   color: #003049;
 }
 
-#menuBurger {
-  display: none;
-}
-
-/* Add a hamburger menu for mobile users and hide the nav bar */
+/* Adds a hamburger menu for mobile users and changes nav bar structure */
 @media (max-width: 700px) {
   #menuBurger {
     display: block;
     margin-bottom: 0;
+    text-align: center;
   }
 
   .nav-bar {
@@ -124,13 +122,9 @@ header {
     margin: 10px;
   }
 
-  .icon {
-      display: block;
-      text-align: center;
-    }
 }
 
-/* Covid-19 Bar */
+/* Covid-19 bar */
 #covid19 {
   display: block;
   align-items: center;
@@ -146,12 +140,11 @@ header {
 
 #covid19:hover {
   text-decoration: underline;
-  cursor: pointer;
 }
 
-/* Index styles start */
 
-/* Main container */
+/* Index styles start */
+/* Main container for the three sections */
 .main-container {
   display: grid;
   grid-template-columns: 20% 50% 30%;
@@ -172,6 +165,7 @@ header {
   text-align: justify;
   background-color: #002f4926;
 }
+
 .main-container section p,
 .main-container section ol {
   margin: 15px 0;
@@ -182,21 +176,22 @@ header {
   padding: 5px 0;
 }
 
-/* Places the most played list on the left */
+/* Places the most played list on the left in the large view */
+/* so the main content is prominent at the middle */
 .most-played-mid {
   order: -1;
 }
 
-/* Adjusts the positions for 1200px */
+/* Adjusts the positions for 1200px and below */
 @media (max-width: 1200px) {
 
-  /* Stacks the content */
+  /* Stacks the sections */
   .main-container {
       display: flex;
       flex-direction: column;
     }
 
-  /* Places the most played list in its orignal position */
+  /* Places the most played list in its original position */
   .most-played-mid {
     order: 0;
   }
@@ -216,23 +211,15 @@ header {
   }
 }
 
-.subsection-title {
-  margin: 30px 0;
-  text-align: center;
-}
-
 /* Map styles */
 #map {
   height: 400px;
   width: 100%;
 }
-
-
 /* Index styles end */
 
 
 /* Events styles start */
-
 .events-container {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -247,11 +234,13 @@ header {
   }
 }
 
+/* Containers of current and past events */
 .events-child {
   padding: 0 20px 20px;
   margin: 0 20px;
 }
 
+/* Titles for current and past events sections */
 .events-title {
   text-align: center;
   margin: 0 10px 10px;
@@ -259,15 +248,18 @@ header {
   background-color: #f780003d;
 }
 
-#weekly-monthly {
+/* Content on the left below title */
+#events-left {
   display: block;
   padding: 10px;
 }
 
+/* Divs for weekly and monthly sections */
 .events-left-divider {
   margin-bottom: 20px;
 }
 
+/* Titles for weekly and monthly sections */
 .events-left-divider h3 {
   text-align: center;
   justify-content: center;
@@ -277,6 +269,7 @@ header {
   border: 1px solid #003049;
 }
 
+/* Titles for specific */
 .event-content h4 {
   text-align: center;
   margin: 5px;
@@ -406,6 +399,12 @@ header {
 
 .button-review:active {
   cursor: pointer;
+}
+
+
+.subsection-title {
+  margin: 30px 0;
+  text-align: center;
 }
 
 /* Articles */
