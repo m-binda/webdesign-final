@@ -222,11 +222,14 @@ header {
 
 /* Membership styles start */
 
+/* Main container for the page */
 .main-membership {
-  display: flex;
+  display: grid;
+  grid-template-columns: 60% 40%;
   justify-content: center;
 }
 
+/* h2 and h3 titles on the page */
 .main-membership h2,
 .main-membership h3 {
   padding: 10px 20px;
@@ -234,33 +237,129 @@ header {
   text-align: center;
 }
 
+/* Substitle under h2 */
+.main-membership h2+p {
+  text-align: justify;
+  margin: 20px;
+}
+
+/* Container for the page sections */
 .membership-container {
   padding: 10px 20px;
   margin: 20px;
-  max-width: 800px;
 }
 
-.membership-content {
+/* Container for the membership boxes */
+.membership-options {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
 }
 
-.membership-options {
+/* Boxes with membership options */
+.options {
   margin: 15px;
-  padding: 40px;
+  padding: 50px;
   background-color: #002f4932;
   position: relative;
 }
 
-.membership-options p .price {
+/* Prices within the boxes */
+.price {
   position: absolute;
-  top: 90%;
+  top: 85%;
   right: 10%;
+  font-size: 1.2em;
   font-weight: 700;
 }
 
+/* Styles for the form */
+form {
+  text-align: center;
+}
 
+label {
+  font-weight: 600;
+}
+
+form div {
+  margin: 20px 0;
+}
+
+.form-fields {
+  text-align: left;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.choose-member {
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.choose-member div {
+  margin: 10px;
+}
+
+.form-fields textarea{
+  display: block;
+  width: 80%;
+  margin-top: 10px;
+}
+
+/* Reset button styles */
+#form-submit {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+#form-submit {
+  background-color: #003049;
+  color: #f1faee;
+  padding: 10px 20px;
+  width: 80%;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+#form-submit:hover {
+  transform: translateY(-3px);
+}
+
+#form-submit:active {
+  cursor: pointer;
+  transform: translateY(1px);
+}
+
+/* Adjust the page for smaller screens */
+@media (max-width: 1200px)  {
+  .main-membership {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .membership-container {
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 700px){
+  .membership-options {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /* Membership styles end */
 
 
