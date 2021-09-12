@@ -16,6 +16,9 @@
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="assets/main.css">
 
+    <!-- Simple stylesheet for the report -->
+    <link rel="stylesheet" href="assets/report.css">
+
     <!-- Hamburger icon and logo for smaller screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -29,63 +32,252 @@
                 <img id="logo-img" alt="Anima Mundi Board Game Club Logo" src="assets/logos/logo-rect.png">
             </a>
         </div>
+
         <!-- Navigation bar -->
+        <!-- Adds hamburger icon -->
         <a href="javascript:void(0);" class="icon" id="menuBurger">
             <i class="fa fa-bars"></i>
             <span>MENU</span>
         </a>
+        <!-- Menu -->
         <ul class="nav-bar" id="nav-bar">
             <li><a id="current" href="index.html">Home</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="reviews.html">Game Reviews</a></li>
+            <li><a href="membership.html">Membership</a></li>
             <li><a href="about_us.html">About us</a></li>
         </ul>
 
     </header>
-    <section id="covid19-container">
-        <a href="covid19.html" id="covid19">
-            <p>COVID-19 - Check here to see our guidelines</p>
-        </a>
-    </section>
 
-    <h1>Report</h1>
+    <h1>Report: Large Coursework</h1>
 
     <h2>Student details</h2>
     <p>Name: Marcelo Binda Alves</p>
-
-    <h3>Sources</h3>
-    <p>
-        https://unsplash.com/photos/w7eaCH6ShR4 - catan
-        https://unsplash.com/photos/laNNTAth9vs - troyes
-        https://unsplash.com/photos/NrS53eUKgiE - concordia
-        https://unsplash.com/photos/FdTmaUlEr4A - tickettoride
-        https://unsplash.com/photos/Q4Honp3Pyqs - descent
-        https://unsplash.com/photos/Ky-yCucr8cY - room
-        https://boardgamegeek.com/image/2789671/village - village
-        https://boardgamegeek.com/image/2276081/orleans - orleans
-        https://boardgamegeek.com/image/5552476/endeavor-age-sail - endeavor
-        https://boardgamegeek.com/image/3694006/7th-continent - 7thcontinent
-        https://boardgamegeek.com/image/6115885/twilight-imperium-fourth-edition - ti4
-        https://boardgamegeek.com/image/1453039/robinson-crusoe-adventures-cursed-island - robinsoncrusoe
+    <p>(the name was requested in the report specification)</p>
 
 
-        Social Media Logos - https://www.flaticon.com/
+    <h2>Introduction</h2>
 
-        COVID rules based on
-        https://kanecountyconnects.com/wp-content/uploads/2020/08/Screen-Shot-2020-08-25-at-1.37.57-PM.png
+    <p>For this assignment, I decided to make a website for a non-existing board game club, which I called Anima Mundi
+        Board Game Club As my current position does not allow me to offer services to third parties, this solution was
+        obligatory. </p>
 
-        Board game reviews
-        https://boardgamegeek.com/image/2649434/food-chain-magnate
-        https://boardgamegeek.com/image/3727516/twilight-imperium-fourth-edition
-        https://boardgamegeek.com/image/2611318/mombasa
-        https://boardgamegeek.com/image/2437871/gloomhaven
-        https://boardgamegeek.com/image/3209553/lisboa
-        https://boardgamegeek.com/image/1176893/castles-burgundy
-        https://boardgamegeek.com/image/3165731/robinson-crusoe-adventures-cursed-island
-        https://boardgamegeek.com/image/2461346/voyages-marco-polo
-        https://boardgamegeek.com/image/2688214/mottainai
+    <p>Based on the structure of researched websites with similar content, it was clear that the club’s website should
+        present a main page, with introductory content; a events page, with the agenda of current events and images from
+        past events; a game reviews page, with written and video reviews for users to see; a membership page, with the
+        description and prices of possible memberships; an about us page, with more information about the owners; and a
+        COVID-19 guidelines, due to our current global situation.</p>
 
+    <p>All written content and the photos in the about us page are my own. All the other images were downloaded from the
+        Internet, from sites which allow this usage. The sources are mentioned at the bottom of this report. The logos
+        for the website were made with Adobe Spark Logo Maker (https://spark.adobe.com/express-apps/logo-maker/).</p>
+
+    <p>Although the rubric requested five pages, I decided to make an extra COVID-19 guidelines page. Considering the
+        structure of the website, none of the pages could be removed in order for it to make sense. In case it is not
+        possible to grade this assignment for all pages, please consider the following HTML pages: index, events,
+        reviews, membership and about_us.</p>
+
+
+    <h2>Comments on the pages</h2>
+
+    <p>The website’s main page presents the introduction to the website, a list of most played games and a map leading
+        to the club’s address. The main content of this page, which is the welcome text, remains always at the center of
+        the viewer’s attention: for computers, this means the content is placed in the middle of the screen; for mobile
+        users, the content is placed on top of the page.</p>
+
+    <p>I also added a mockup map, obtained according to the instructions from Google [1]. Unfortunately, it is not
+        possible to generate a working map without paying for a membership.</p>
+
+    <p>In the event page, I included an explanation of the current events held at the club and a gallery with the past
+        events and some board game images. The gallery has thumbnails of the images, each allocated to a square of the
+        same size, and each image reacts when the user hovers the cursor over them, so the user knows it is possible to
+        open them. Once clicked, the image opens over the whole page. For ease of navigation, I decided to allow the
+        user to close the image both by clicking the X in the corner or by pressing the ESC key in the keyboard. The
+        gallery also rotates, going from the last to the first image and vice-versa.</p>
+
+    <p>For the game review page, I included subsections for written and video reviews separately. This was done in order
+        to keep the page’s length at a manageable size for the user. The buttons used to choose between the sections are
+        each colored and positioned in a way to act as tabs for the content below, thus making it easier for the user to
+        understand their purpose.</p>
+
+    <p>The articles of the written reviews and the videos all adjust properly to the screen size of the users. The
+        videos are also embedded in the page, thus making it possible to play them in loco.</p>
+
+    <p>The last three pages have simpler, more direct content. In the membership page, I added both the description of
+        each membership type and a form for the user to contact the club about membership options. The about us page
+        contains a photo of the owners, the club’s pet and a “new player”, a short, playful description of them, and a
+        larger photo at the bottom to illustrate the “family” feeling the club aims to pass. Finally, the COVID
+        guidelines page contains basic instructions and rules for the club at this moment</p>
+
+
+    <h2>Inspirations</h2>
+
+    <p>In order to better assess the needs of the website, I researched other board-game related pages, such as Shut Up
+        and Sit Down (https://www.shutupandsitdown.com/), The Dice Tower (https://www.dicetower.com/), Strategy & Board
+        Games Club of the Wharton School of the University of Pennsylvania
+        (https://groups.wharton.upenn.edu/strategygames/home/) and Board Game Club (https://www.boardgameclub.net/).
     </p>
+
+    <p>The Board Game Club was particularly helpful at choosing the content that could be expected at a website like
+        this. Their gallery with past events was a direct inspiration for the gallery at my website. Their website also
+        allowed me to avoid some pitfalls. I considered their gallery too packed and crowded, which did not allow the
+        user some room to rest their eyes (which I consider mandatory for ease of use).</p>
+
+    <p>The color palette for the website was obtained at Coolors (https://coolors.co/), which inspired me to choose a
+        more vivid palette, with enough contrast for all users.</p>
+
+
+    <h2>Accessibility</h2>
+
+    <p>The website presents an accessible font (no serifs or peculiar font types), with reasonable sizing for all
+        content. The colors also have deeper contrast, in order to make it easier for color-blind users. Finally, the
+        form and images are all correctly labeled, with the images having a complete description in the HTML pages.</p>
+
+
+    <h2>Usability</h2>
+
+    <p>The website was designed to be easy to navigate for any user. From the various choices made to make this
+        possible, the following three can be highlighted:</p>
+
+    <p>- The website reacts properly to different screen sizes and the contents stay readable. This is particularly
+        notable in the collapsible hamburger menu and the gallery, which moves the navigation arrows to the bottom of
+        the screen. It was also interesting to design a different, more vertical logo for mobile users, so it fits
+        better the screen, which was accomplished using JavaScript.</p>
+
+    <p>- All clickable content reacts to the users when they hover the cursor over them. This is particularly clear in
+        the main menu, for both large and small screen users, and the Articles and Videos tabs in the game reviews page.
+        For mobile users, all clickable content remains obvious, as their functions are always clear on the page.</p>
+
+    <p>- The game reviews page splits the content in two subsections, so the user does not need to scroll too much to
+        access it.</p>
+
+
+    <h2>Learned skills</h2>
+
+    <p>As this is the first time I build a website from scratch, every skill was learned in order to be able to do it.
+        The main skills I can underline are:</p>
+
+    <p>- The gallery in JavaScript. Although there are many examples available online, I realized that I had enough
+        understanding of coding to be able to design it basically from scratch. Linking the code to the DOM was the
+        hardest part, as I had to learn more about how the DOM works and how it interacts with programming languages.
+    </p>
+
+    <p>- CSS positioning and resizing. It was particularly difficult for me to understand how to position the items on
+        the
+        screen. Taking my experience from our first assignment, it was possible to understand generally simpler ways to
+        achieve a correct positioning, without so much micromanagement of the values. After studying more about grid and
+        flex layouts, I was able to achieve a more harmonic and fluid experience for the user on all screen sizes.</p>
+
+    <p>- HTML structure. It was particularly useful to better understand the structure and its function in the HTML
+        files.
+        I was able to better organize the content in the page and better split the correct sections. For this
+        assignment, I believe it would be easier for another coder to continue my work without much trouble, due to a
+        clearer and functional structure and better comments.</p>
+
+
+    <h2>What worked well</h2>
+
+    <p>The gallery was the most successful part of the website. As mentioned before, although there are multiple
+        examples online on how to make a gallery using JavaScript, it was necessary to do it from scratch, as the
+        examples did not achieve what I was aiming for. After multiple tests, the gallery function as any user would
+        expect, remaining pleasant looking at all screen sizes, opened or closed. The way it was designed, it can also
+        have multiple images added to the HTML without altering anything in the CSS or the JavaScript files.</p>
+
+    <p>The game reviews page also works really well. It was possible to design a tab structure without much effort and
+        with simple JavaScript coding. The decision to make the subsections as tabs allows the user to navigate it
+        without effort and without having to think about the website structure, which was my main goal here. It also
+        makes the website shorter, which prevents too much scrolling.</p>
+
+
+    <h2>Possible improvements</h2>
+
+    <p>If I was allowed more time, I would invest more time in researching color palettes and web design choices for a
+        more pleasant and professionally looking website. Although the website works well and its code is functional, it
+        is noticeable that it would benefit from more experience in the designing side of it, especially for the color
+        choices and the logo design.</p>
+
+
+
+    <h2>Resources</h2>
+    <p>
+        [1] Google, ‘Adding a Google Map with a Marker to Your Website ‘, 2021. [Online] Available:
+        https://developers.google.com/maps/documentation/javascript/adding-a-google-map. [Accessed: 06-Sep-2021].</p>
+
+    <p>Photos used in the website:</p>
+
+    <p>events.html
+    <p>assets/images/events/catan.jpg - https://unsplash.com/photos/w7eaCH6ShR4</p>
+    <p>assets/images/events/troyes.jpg - https://unsplash.com/photos/laNNTAth9vs</p>
+    <p>assets/images/events/concordia.jpg - https://unsplash.com/photos/NrS53eUKgiE</p>
+    <p>assets/images/events/tickettoride.jpg - https://unsplash.com/photos/FdTmaUlEr4A</p>
+    <p>assets/images/events/descent.jpg - https://unsplash.com/photos/Q4Honp3Pyqs</p>
+    <p>assets/images/events/room.jpg - https://unsplash.com/photos/Ky-yCucr8cY</p>
+    <p>assets/images/events/village.jpg - https://boardgamegeek.com/image/2789671/village</p>
+    <p>assets/images/events/orleans.jpg - https://boardgamegeek.com/image/2276081/orleans</p>
+    <p>assets/images/events/endeavor.jpg -
+        assets/images/events/https://boardgamegeek.com/image/5552476/endeavor-age-sail</p>
+    <p>assets/images/events/7thcontinent.jpg -
+        assets/images/events/https://boardgamegeek.com/image/3694006/7th-continent</p>
+    <p>assets/images/events/ti4.jpg - https://boardgamegeek.com/image/6115885/twilight-imperium-fourth-edition</p>
+    <p>assets/images/events/robinsoncrusoe.jpg -
+        https://boardgamegeek.com/image/1453039/robinson-crusoe-adventures-cursed-island</p>
+
+    <p>reviews.html</p>
+    <p>assets/images/covers/fcm.png - https://boardgamegeek.com/image/2649434/food-chain-magnate</p>
+    <p>assets/images/covers/ti4.jpg - https://boardgamegeek.com/image/3727516/twilight-imperium-fourth-edition</p>
+    <p>assets/images/covers/mombasa.jpg - https://boardgamegeek.com/image/2611318/mombasa</p>
+    <p>assets/images/covers/gloomhaven.jpg - https://boardgamegeek.com/image/2437871/gloomhaven</p>
+    <p>assets/images/covers/lisboa.jpg - https://boardgamegeek.com/image/3209553/lisboa</p>
+    <p>assets/images/covers/castlesofburgundy.jpg - https://boardgamegeek.com/image/1176893/castles-burgundy</p>
+    <p>assets/images/covers/robinsoncrusoe.jpg -
+        https://boardgamegeek.com/image/3165731/robinson-crusoe-adventures-cursed-island</p>
+    <p>assets/images/covers/marcopolo.png - https://boardgamegeek.com/image/2461346/voyages-marco-polo</p>
+    <p>assets/images/covers/mottainai.jpg - https://boardgamegeek.com/image/2688214/mottainai</p>
+
+    <p>Social Media Logos - https://www.flaticon.com/</p>
+
+    <p>Images used for the COVID rules based on
+        https://kanecountyconnects.com/wp-content/uploads/2020/08/Screen-Shot-2020-08-25-at-1.37.57-PM.png</p>
+
+
+
+    <h2>Appendices</h2>
+    <p>All images in full size in their respective folders</p>
+
+    <h3>Site Map</h3>
+
+    <img src="Sitemap/sitemap.png" alt="">
+
+    <h3>Wireframes</h3>
+
+    <h4>Larger Screens</h4>
+    <img src="Wireframes/ls01.png" alt="">
+    <img src="Wireframes/ls02.png" alt="">
+    <img src="Wireframes/ls03.png" alt="">
+    <img src="Wireframes/ls04.png" alt="">
+    <img src="Wireframes/ls05.png" alt="">
+    <img src="Wireframes/ls06.png" alt="">
+    <img src="Wireframes/ls07.png" alt="">
+
+    <h4>Smaller Screens</h4>
+    <img src="Wireframes/ss01.png" alt="">
+    <img src="Wireframes/ss02.png" alt="">
+    <img src="Wireframes/ss03.png" alt="">
+    <img src="Wireframes/ss04.png" alt="">
+    <img src="Wireframes/ss05.png" alt="">
+    <img src="Wireframes/ss06.png" alt="">
+    <img src="Wireframes/ss07.png" alt="">
+
+    <h3>Mockups</h3>
+    <img src="Mockups/lsmockup1.png" alt="">
+    <img src="Mockups/lsmockup2.png" alt="">
+    <img src="Mockups/lsmockup3.png" alt="">
+    <img src="Mockups/lsmockup4.png" alt="">
+    <img src="Mockups/lsmockup5.png" alt="">
+    <img src="Mockups/lsmockup6.png" alt="">
+    <img src="Mockups/lsmockup7.png" alt="">
+
 
 </body>
 
