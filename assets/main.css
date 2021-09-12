@@ -1,3 +1,10 @@
+/* Colors used, for reference 
+003049 dark blue
+002f4932 transparent blue
+f77f00 orange
+f780003d transparent orange
+*/
+
 /* Reset styles */
 * {
   padding: 0;
@@ -6,21 +13,11 @@
   box-sizing: border-box;
 }
 
-
-
 /* Global styles */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   background-color: #f1faee;
-}
-
-a {
-  text-decoration: none;
-}
-
-body+a:hover {
-  text-decoration: underline;
 }
 
 ul {
@@ -34,6 +31,15 @@ main {
 h1 {
   text-align: center;
   padding: 20px;
+}
+
+/* Adds Wikipedia style decoration to links */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* Header styles */
@@ -59,14 +65,14 @@ header {
 }
 
 /* Make the logo smaller for mobile users. The logo image 
-/* is changed by menu.js */
+/* is changed by menu.js into a more vertical one */
 @media (max-width: 700px) {
   #logo-img {
     width: 100%;
   }
 }
 
-/* Navigation bar and burger icon (only for smaller screen) */
+/* Adds navigation bar and burger icon for smaller screen */
 #title nav,
 #menuBurger {
   width: 100%;
@@ -93,7 +99,7 @@ header {
 #menuBurger {
   padding: 10px 15px;
   color: #f77f00;
-  transition: background-color 0.5s;
+  transition: background-color 0.2s;
 }
 
 /* Adds effect for current page and hovered pages on the menu */
@@ -102,6 +108,7 @@ header {
 #title .nav-bar a:hover {
   background-color: #f1faee;
   color: #003049;
+  text-decoration: none;
 }
 
 /* Adds a hamburger menu for mobile users and changes nav bar structure */
@@ -163,7 +170,7 @@ header {
   padding: 30px 20px;
   margin: 10px;
   text-align: justify;
-  background-color: #002f4926;
+  background-color: #002f4932;
 }
 
 .main-container section p,
@@ -182,7 +189,7 @@ header {
   order: -1;
 }
 
-/* Adjusts the positions for 1200px and below */
+/* Adjusts the positions for smaller screens */
 @media (max-width: 1200px) {
 
   /* Stacks the sections */
@@ -203,7 +210,6 @@ header {
   }
 }
 
-/* Adjusts the position for 700px */
 @media (max-width: 700px) {
 
   /* Makes the list into one column again */
@@ -218,149 +224,6 @@ header {
   width: 100%;
 }
 /* Index styles end */
-
-
-/* Membership styles start */
-
-/* Main container for the page */
-.main-membership {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  justify-content: center;
-}
-
-/* h2 and h3 titles on the page */
-.main-membership h2,
-.main-membership h3 {
-  padding: 10px 20px;
-  align-items: center;
-  text-align: center;
-}
-
-/* Substitle under h2 */
-.main-membership h2+p {
-  text-align: justify;
-  margin: 20px;
-}
-
-/* Container for the page sections */
-.membership-container {
-  padding: 10px 20px;
-  margin: 20px;
-}
-
-/* Container for the membership boxes */
-.membership-options {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-}
-
-/* Boxes with membership options */
-.options {
-  margin: 15px;
-  padding: 50px;
-  background-color: #002f4932;
-  position: relative;
-}
-
-/* Prices within the boxes */
-.price {
-  position: absolute;
-  top: 85%;
-  right: 10%;
-  font-size: 1.2em;
-  font-weight: 700;
-}
-
-/* Styles for the form */
-form {
-  text-align: center;
-}
-
-label {
-  font-weight: 600;
-}
-
-form div {
-  margin: 20px 0;
-}
-
-.form-fields {
-  text-align: left;
-}
-
-.form-input {
-  display: block;
-  width: 100%;
-  padding: 5px;
-  margin: 5px 0;
-}
-
-.choose-member {
-  padding: 10px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.choose-member div {
-  margin: 10px;
-}
-
-.form-fields textarea{
-  display: block;
-  width: 80%;
-  margin-top: 10px;
-}
-
-/* Reset button styles */
-#form-submit {
-  border: none;
-  background-color: transparent;
-  font-family: inherit;
-  padding: 0;
-  cursor: pointer;
-}
-
-#form-submit {
-  background-color: #003049;
-  color: #f1faee;
-  padding: 10px 20px;
-  width: 80%;
-  border-radius: 5px;
-  transition: 0.1s;
-}
-
-#form-submit:hover {
-  transform: translateY(-3px);
-}
-
-#form-submit:active {
-  cursor: pointer;
-  transform: translateY(1px);
-}
-
-/* Adjust the page for smaller screens */
-@media (max-width: 1200px)  {
-  .main-membership {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .membership-container {
-    margin: 0 40px;
-  }
-}
-
-@media (max-width: 700px){
-  .membership-options {
-    display: flex;
-    flex-direction: column;
-  }
-}
-/* Membership styles end */
 
 
 /* Events styles start */
@@ -413,7 +276,7 @@ form div {
   border: 1px solid #003049;
 }
 
-/* Titles for specific */
+/* Titles for specific events */
 .event-content h4 {
   text-align: center;
   margin: 5px;
@@ -449,10 +312,12 @@ form div {
   transition: 0.5s;
 }
 
+/* Adds hover effect, shrinking the image */
 .gallery-image:hover {
   transform: scale(0.9);
 }
 
+/* Styles for the opened image */
 #openedImgBox {
   width: 100%;
   height: 100vh;
@@ -460,10 +325,11 @@ form div {
   position: fixed;
   top: 0;
   left: 0;
-  display: none;
   align-items: center;
   justify-content: center;
   z-index: 1;
+  /* Start hidden */
+  display: none;
 }
 
 #openedImg {
@@ -471,6 +337,7 @@ form div {
   max-width: 80%;
 }
 
+/* Closing X button */
 #closeX {
   position: absolute;
   top: 5%;
@@ -480,6 +347,7 @@ form div {
   cursor: pointer;
 }
 
+/* Left and right arrows positioning */
 #left,
 #right {
   text-align: center;
@@ -499,7 +367,7 @@ form div {
   right: 10%;
 }
 
-/* Moves navigation arrows to the bottom for mobile users */
+/* Moves navigation arrows to the bottom for smaller screens */
 @media (max-width: 1200px) {
   #left {
     left: 35%;
@@ -511,8 +379,6 @@ form div {
     top: 90%;
   }
 }
-
-
 /* Events styles end */
 
 
@@ -523,6 +389,8 @@ form div {
   justify-content: bottom;
 }
 
+/* Styles the top button for choosing the sections */
+/* Blends it with the section under it */
 .button-review {
   font-size: 1.2em;
   text-transform: uppercase;
@@ -546,13 +414,13 @@ form div {
   cursor: pointer;
 }
 
-
-.subsection-title {
+/* Subtitle for each section */
+.subsection-subtitle {
   margin: 30px 0;
   text-align: center;
 }
 
-/* Articles */
+/* Articles main container */
 #articles-section {
   text-align: center;
   justify-content: center;
@@ -563,6 +431,7 @@ form div {
   background-color: #002f4932;
 }
 
+/* Container for the individual reviews */
 .article {
   align-items: center;
   margin: 20px 0;
@@ -572,17 +441,21 @@ form div {
   border-bottom: 1px solid black;
 }
 
-@media (max-width: 700px) {
+/* Adjusts position for smaller screens */
+/* The image goes above the text and title */
+@media (max-width: 1200px) {
   .article {
     display: block;
   }
 }
 
+/* Title of each reviewed game */
 .article-title {
   font-size: 1.5em;
   text-transform: uppercase;
 }
 
+/* Review text */
 .article-text {
   margin: 10px;
   padding: 15px;
@@ -593,6 +466,7 @@ form div {
   margin-bottom: 20px;
 }
 
+/* Styles for the rating score */
 .rating {
   margin-top: 20px;
   font-weight: 700;
@@ -600,15 +474,18 @@ form div {
   text-transform: uppercase;
 }
 
+/* Styles for the game image */
 .article-image {
-  max-width: 250px;
-  max-height: 200px;
+  max-width: 300px;
+  max-height: 300px;
   height: auto;
   width: auto;
+  margin: 10px 0;
 }
 
 /* Videos */
 
+/* Main container for the whole videos section */
 #videos-section {
   display: none;
   padding: 20px;
@@ -616,6 +493,7 @@ form div {
   margin: 0 10%;
 }
 
+/* Container for the video boxes */
 .videos-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 700px));
@@ -624,27 +502,236 @@ form div {
   text-align: center;
 }
 
+/* Container for each video */
 .videos-child {
   margin: 30px 30px;
-  padding: 20px 0;
+  padding: 20px;
   border: 2px solid #003049;
 }
 
+/* Title of the video reviews */
 .videos-child h3 {
   text-transform: uppercase;
   margin: 10px 0;
 }
 
+/* Styles for the video player */
 iframe {
   height: 360px;
   width: 100%;
 }
-
 /* Reviews page style end */
 
 
-/* COVID-19 page styles begin */
+/* Membership styles start */
+/* Main container for the page */
+.main-membership {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  justify-content: center;
+}
 
+/* h2 and h3 titles on the page */
+.main-membership h2,
+.main-membership h3 {
+  padding: 10px 20px;
+  align-items: center;
+  text-align: center;
+}
+
+/* Substitle under h2 */
+.main-membership h2+p {
+  text-align: justify;
+  margin: 20px;
+}
+
+/* Container for the page sections */
+.membership-container {
+  padding: 10px 20px;
+  margin: 20px;
+}
+
+/* Container for the membership boxes */
+.membership-options {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+/* Boxes with membership options */
+.options {
+  margin: 15px;
+  padding: 50px;
+  background-color: #002f4932;
+  position: relative;
+}
+
+/* Prices within the boxes */
+.price {
+  position: absolute;
+  top: 85%;
+  right: 10%;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+/* Styles for the form */
+#membership-form {
+  text-align: center;
+}
+
+label {
+  font-weight: 600;
+}
+
+#membership-form div {
+  margin: 20px 0;
+}
+
+.form-fields {
+  text-align: left;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.choose-member {
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.choose-member div {
+  margin: 10px;
+}
+
+.form-fields textarea{
+  display: block;
+  width: 80%;
+  margin-top: 10px;
+}
+
+/* Form button */
+/* Reset button styles */
+#form-submit {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Adds new styles for the button */
+#form-submit {
+  background-color: #003049;
+  color: #f1faee;
+  padding: 10px 20px;
+  width: 80%;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+/* Hovering effect */
+#form-submit:hover {
+  transform: translateY(-3px);
+}
+
+/* Clicking effect */
+#form-submit:active {
+  transform: translateY(1px);
+}
+
+/* Adjusts the page for smaller screens */
+@media (max-width: 1200px)  {
+  .main-membership {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .membership-container {
+    margin: 0 40px;
+  }
+}
+
+@media (max-width: 700px){
+  .membership-options {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Membership styles end */
+
+
+/* About us page styles begin */
+/* Main container for the page */
+#about-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* Individual boxes */
+.about-us-child {
+  border: 1px solid #003049;
+  padding: 20px;
+  margin: 20px;
+  max-width: 600px;
+}
+
+/* Name of the people */
+.about-us-child h2 {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Styles for the content of the box */
+.about-us-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the image */
+.about-us-img {
+  height: 300px;
+}
+
+/* Styles for the text */
+.about-us-text {
+  padding: 20px;
+  text-align: justify;
+}
+
+.about-us-text p {
+  padding: 10px;
+}
+
+/* Styles for the larger image container at the bottom */
+#about-us-bottom {
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Styles for the larger image at the bottom */
+#about-us-bottom-img {
+  height: auto;
+  width: 100%;
+  max-width: 600px;
+}
+/* About us page styles end */
+
+
+/* COVID-19 page styles begin */
+/* Main title */
 #covid-title {
   text-align: center;
   margin: 10px 200px;
@@ -655,6 +742,7 @@ iframe {
   padding: 10px;
 }
 
+/* Main container for the section */
 #covid-container {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -664,106 +752,53 @@ iframe {
   margin: 0 200px;
 }
 
+/* Div for the individual boxes */
 #covid-container div {
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
   justify-content: center;
-  text-align: center;
   margin: 40px 10px;
   padding: 30px;
   border: 1px solid #003049;
 }
 
+/* Changes text align within the boxes */
 #covid-container p {
   text-align: justify;
 }
 
+/* Styles for the images */
 #covid-container img {
   align-items: center;
   max-width: 400px;
   width: 90%;
 }
 
-/* Adjusments for smaller screens */
+/* Adjusts the page for smaller screens */
 @media (max-width: 1200px) {
   #covid-title {
     margin: 30px;
   }
 
+  /* Stacks the boxes and make them ocupy the whole screen */
   #covid-container {
     display: block;
     margin: 30px;
   }
 
+  /* Moves the text under the image */
   @media (max-width: 700px) {
     #covid-container div {
       display: block;
     }
-
-    #covid-container p {
-      text-align: center;
-    }
   }
 }
-
 /* COVID-19 page styles end */
 
-/* About us page styles begin */
-#about-us-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.about-us-child {
-  border: 1px solid #003049;
-  padding: 20px;
-  margin: 20px;
-  max-width: 600px;
-}
-
-.about-us-child h2 {
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-}
-
-.about-us-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-us-img {
-  height: 300px;
-}
-
-.about-us-text {
-  padding: 20px;
-  text-align: justify;
-}
-
-.about-us-text p {
-  padding: 10px;
-}
-
-#about-us-bottom {
-  text-align: center;
-  margin: 10px;
-  padding: 20px;
-}
-
-#about-us-bottom-img {
-  height: auto;
-  width: 100%;
-  max-width: 600px;
-}
-
-/* About us page styles end */
 
 /* Footer */
+/* Main container for the footer */
 .footer-container {
   background-color: #003049;
   display: grid;
@@ -777,10 +812,7 @@ iframe {
   height: 100%;
 }
 
-.logo-footer {
-  width: 180px;
-}
-
+/* Styles for the newsletter subscription */
 #footer-newsletter {
   text-align: left;
   margin-left: 10%;
@@ -790,6 +822,12 @@ iframe {
   padding: 2px 3px;
 }
 
+/* Footer logo */
+.logo-footer {
+  width: 180px;
+}
+
+/* Address */
 #footer-address {
   display: flex;
   flex-direction: row;
@@ -799,6 +837,7 @@ iframe {
   margin: 0 100px;
 }
 
+/* Social media */
 #footer-social-media {
   display: flex;
   justify-content: center;
@@ -816,12 +855,3 @@ iframe {
     display: block;
   }
 }
-
-/* 
-Color pallete:
-003049 dark blue
-d62828 red
-f77f00 orange
-fcbf49 yellow
-f1faee pale
-*/
