@@ -852,6 +852,19 @@ label {
 /* Adjust the footer for smaller screens */
 @media (max-width: 700px) {
   .footer-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer-newsletter {
+    text-align: center;
+    margin-left: 0;
+    margin: 10px 0;
+  }
+
+  /* Places the logo on top for smaller screens */
+  .logo-footer {
+    order: -1;
   }
 }
